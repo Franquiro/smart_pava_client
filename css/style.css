@@ -1,0 +1,23 @@
+.center-panel {
+  width: 70%;
+  margin: auto;
+}
+/*.text-centered {
+  text-align: center;
+}*/
+.p10-20 {
+  padding: 10px 20px;
+}
+body {
+  background-color: #35ffa4;
+  border: 1px solid black;
+}
+.d-block {
+  display: block;
+}
+.mauto {
+  margin: auto;
+}
+.w100 {
+  width: 100%;
+}

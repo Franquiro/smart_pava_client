@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Smart_Pava</title>
-</head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/smart_pava_client/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/smart_pava_client/css/bootstrap.min.css"
+    />
+  </head>
 
-<body>
-    <form id="setTarget">
-        <input type='number' name='temp' />
-        <button type="submit">Calentar</button>
-    </form>
-    <h2 id="targetTemp"></h2>
-    <table id="temperaturas">
-        <tbody>
-
-        </tbody>
-    </table>
+  <body>
+    <header>
+      <h1 class="text-center">SMART_PAVA</h1>
+    </header>
+    <main class="center-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-0"></div>
+          <div class="col-lg-8 col-sm-12">
+            <form id="setTarget">
+              <input
+                class="no-border"
+                type="range"
+                value="0"
+                min="0"
+                max="100"
+                name="temp"
+                id="target_slider"
+              />
+              <button class="btn btn-primary" type="submit">Calentar</button>
+            </form>
+            <h2 class="text-center" id="targetTemp"></h2>
+          </div>
+          <div class="col-lg-4 col-sm-12"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-0"></div>
+          <div class="col-lg-8 col-sm-12">
+            <table id="temperaturas">
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="col-lg-4 col-sm-0"></div>
+        </div>
+      </div>
+    </main>
     <script type="text/javascript" src="index.js"></script>
-</body>
-
+  </body>
 </html>
