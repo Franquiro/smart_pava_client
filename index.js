@@ -1,5 +1,5 @@
-const servername = "http://localhost";
-const port = 3000;
+const servername = "https://smart-pava.appspot.com";
+const port = 80;
 const slider = document.querySelector("#target_slider");
 const tituloTarget = document.querySelector("#targetTemp");
 function buscarTemps() {
