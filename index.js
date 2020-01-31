@@ -1,9 +1,8 @@
 const servername = "https://smart-pava.appspot.com";
-const port = 80;
 const slider = document.querySelector("#target_slider");
 const tituloTarget = document.querySelector("#targetTemp");
 function buscarTemps() {
-  let url = `${servername}:${port}/temperaturas`;
+  let url = `${servername}/temperaturas`;
   const tabla = document.querySelector("#temperaturas tbody");
 
   fetch(url)
@@ -35,7 +34,7 @@ form.onsubmit = function(e) {
     temp: document.querySelector('input[name="temp"]').value,
     enable: 1
   };
-  fetch(`${servername}:${port}/target`, {
+  fetch(`${servername}/target`, {
     method: "put",
     body: JSON.stringify(newTarget),
     headers: {
